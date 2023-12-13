@@ -1,15 +1,19 @@
 // PACKAGES NEEDED FOR THIS APPLICATION
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { title } = require('process');
 
 // CREATE QUESTIONS FOR USER INPUT
+
 inquirer.prompt([
     {
         type:'input',
         message:"What is your GitHub username?",
         name:'github',
+        
         // VALIDATE PROPERTY TO CHECK THAT USER PROVIDED A VALUE
+        
         validate: (value)=>{ if(value){return true} else {return 'i need a value to continue'}},
     },
     {
@@ -89,11 +93,13 @@ inquirer.prompt([
     * Email : ${email}`;
     
     // FUNCTION TO CREATE README USING FS
+    
     createNewFile(name,template);
 }
 );
 
-//CREATING OUR CREATEDNEWFILE FUNCTION
+// CREATING OUR CREATENEWFILE FUNCTION
+
 function createNewFile(fileName,data){
     // FS
     fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`,data,(err)=>{
@@ -104,5 +110,5 @@ function createNewFile(fileName,data){
     })
 }
 
-//NOW LETS INSTALL OUR PACKAGES! >:D
+// NOW LETS CREATE OUR README! >:D
 
