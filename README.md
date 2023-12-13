@@ -8,10 +8,10 @@
 
 ## Installation 
 You can clone this repo!
-<img src="/images/screenshot-01.png>
+![screenshot](images/screenshot-01.png)
 
 ## Description
-This is just a basic README generator app using Node.js. Once you have cloned this repo and npm has been installed, type node index.js and the questions should pop up for you to start creating your **README**. <img src="/images/screenshot-02.png
+This is just a basic README generator app using Node.js. Once you have cloned this repo and npm has been installed, type node index.js and the questions should pop up for you to start creating your **README**. ![screenshot](images/screenshot-02.png)
 
 ## License
 MIT License
